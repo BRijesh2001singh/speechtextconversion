@@ -59,7 +59,7 @@ function speak() {
   utterance.text = content;
 
   // Get the index of the selected voice from the dropdown menu
-  var voiceIndex = $("#voice-select").val();
+  var voiceIndex = $("#voice-select").prop("selectedIndex");
 
   if (voiceIndex) {
     // If a voice is selected, set the voice property of the utterance object to the selected voice
