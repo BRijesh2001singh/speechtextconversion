@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech To Text</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+   <style>
+    body{
+        background-color: black;
+    }
+    .heading{
+        color: white;
+	font-size: 47px;
+	-webkit-text-stroke: 1px #F8F8F8;
+	text-shadow: 8px 4px 8px rgb(211, 8, 8);
+    }
+    #instructions{
+color: #F8F8F8;
+    }
+   </style>
+</head>
+<body>
+      <div class="container">
+        <h1 class="text-center mt-5 heading">
+            Speech ⇆ Text
+        </h1> 
+            <div class="form-group"></div>
+            <textarea  id="textbox" rows="6" class="form-control"></textarea>
+            <div class="btn-group mt-4">
+                <button id="start-btn" class="btn btn-danger btn-block mr-3">
+                    Start
+                </button>
+                <button id="stop-btn" class="btn btn-danger mr-3">STOP</button>
+                <button id="speak-btn" class=" btn btn-danger">Speak</button>
+                <select id="voice-select">
+                    <option value="">Select a voice</option>
+                </select>
+            </div>
+            <p id="instructions">Press The Start Button</p>
+      </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="script.js"></script>
+</html>
